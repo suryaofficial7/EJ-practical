@@ -1,0 +1,44 @@
+1a. Create a simple calculator application using servlet.
+
+index.html
+<html><head><title>Calculator App</title></head><body>
+<form action="CalServlet" >
+ Enter First Number <input type="text" name="txtN1" ><br>
+<select name="op">
+<option value="+"> + </option>
+<option value="-"> - </option>
+<option value="*"> * </option>
+<option value="/"> / </option>
+ </select>
+<br>
+Enter Second Number <input type="text" name="txtN2" ><br>
+ <input type="reset">
+<input type="submit" value="Calculate" >
+</form></body></html>
+----------------------------------------
+CalculatorServlet.java
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+public class CalculatorServlet extends HttpServlet {
+
+public void doGet(HttpServletRequest request, HttpServletResponse response)
+ throws ServletException, IOException {
+ response.setContentType("text/html;charset=UTF-8");
+ PrintWriter out = response.getWriter();
+ 
+int n1 = Integer.parseInt(request.getParameter("txtN1"));
+int n2 = Integer.parseInt(request.getParameter("txtN2"));
+ 
+ int result =0;
+ String opr=request.getParameter("op");
+ if(opr.equals("+")) result=n1+n2; 
+if(opr.equals("-")) result=n1-n2;
+ if(opr.equals("*")) result=n1*n2; 
+if(opr.equals("/")) result=n1/n2;
+out.println("<h1> Result = "+result); 
+out.println("</body></html>");} }
