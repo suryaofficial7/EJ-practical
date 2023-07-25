@@ -3,6 +3,9 @@
 ### some imp topics 
 1. cookies declaration - >     Cookie c1 = new Cookie("valueName","Value");
    * example Cookie c1 = new Cookie("userView","1");
+2. GET ALL COOKIES -> request.getCookie();
+3. SETTING VALUE TO THE BROWSER : -> request.addCookie(cookie name); eX: request.addCookie(c1);
+4. SET EXPIRESES --> c1.setMaxAge(in Sececonds);
 ```
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
