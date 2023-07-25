@@ -1,6 +1,6 @@
 # Enterprise java Servlet  COOKIES
-# PRactical 2B (COOKIES in JAVA SERVLETS ....)
-## S.Surya -COOKIES BASED PROGRAM >>>>
+## PRactical 2B (COOKIES in JAVA SERVLETS ....)
+### S.Surya -COOKIES BASED PROGRAM >>>>
 ### some imp topics 
 1. cookies declaration - >     Cookie c1 = new Cookie("valueName","Value");
    * example Cookie c1 = new Cookie("userView","1");
