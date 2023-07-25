@@ -1,5 +1,8 @@
 # Enterprise java Servlet  COOKIES
 ## S.Surya -COOKIES BASED PROGRAM >>>>
+### some imp topics 
+1. cookies declaration - >     Cookie c1 = new Cookie("valueName","Value");
+   * example Cookie c1 = new Cookie("userView","1");
 ```
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
